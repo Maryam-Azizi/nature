@@ -115,5 +115,9 @@ body {
 	text-align: center;
 	display:block;
 	}
+	
+	#navbar li{
+	width:100%;
+	}
 	 
 }
