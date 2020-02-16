@@ -1,16 +1,20 @@
+body, div, li{
+	box-sizing:border-box;
+}
+
 body {
 	font-family: Lato;
 }
 #content{
-	 padding: 0px 0px 0px 30px;
-	 width:65%;
+
+	width:100%;
 	 float: left;
 }
 #content p{
 	padding:0px 25px;
 }
 #nav{
-	width:25%;
+	width:100%;
 	float: left;
 	background: #333;
 	margin:10px 0px 0px 0px;
@@ -25,6 +29,9 @@ body {
 	list-style-type: none;
 	line-height: 2;
 	padding:10px;
+	float:left;
+	width:33.3%;
+	
 }
 #navbar li a{
 	text-decoration: none;
@@ -35,7 +42,8 @@ body {
 	background: #303030;
 }
 #bottom-nav{
-	text-align: center;
+
+	display:none;
 }
 #bottom-nav p{
 	color:#888;
@@ -93,4 +101,19 @@ body {
 #copyright-nav{
 	text-align: center;
 	color:#fff;
+}
+
+@media screen and (min-width:768px){
+	#content{
+		width:65%;
+		padding: 0px 0px 0px 30px;
+	}
+	#nav{
+		width:25%;
+	}
+	#bottom-nav{
+	text-align: center;
+	display:block;
+	}
+	 
 }
